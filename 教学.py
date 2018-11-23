@@ -1,6 +1,6 @@
 # 变量
 a1 = 1
-a2 = "a1的值:{}".format(a1)
+a2 = "a1的值:{}".format()
 
 def main():
     for i in range(9999):
