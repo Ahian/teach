@@ -1,18 +1,19 @@
-# 变量
-a1 = 1
-a2 = "a1的值:{}".format(a1)
-# 布尔值真假，本质是1和0
-a3 = True
+def argss(arg):
+    # 变量
+    a1 = 1
+    a2 = "a1的值:{}".format(a1)
+    # 布尔值真假，本质是1和0
+    a3 = True
 
-# 数据结构
-# 数组 有顺序的一组变量
-array = [a1, a2, a3]
-# dict字典 和数组的核心区别是键值对
-d1={
+    # 数据结构
+    # 数组 有顺序的一组变量
+    array = [a1, a2, a3]
+    # dict字典 和数组的核心区别是键值对
+    d1={
     "key1": a1,
     "key2": a2,
     "key3": a3,
-}
+    }
 def loop():
     # 循环
     var1 = 1
@@ -80,11 +81,14 @@ def ensure(arg1, arg2, massage):
     else:
         print("没出错")
 
-def main():
+def big_ensure():
     ensure(loop_n(3), 6, "3出错")
     ensure(loop_n(4), 24, "4出错")
-    ensure(loop_n(5),100, "5出错")
+    ensure(loop_n(5), 100, "5出错")
 
+
+def main():
+    big_ensure()
     l4 = loop_n(4)
     print(l4)
     # 遍历一个数据结构
