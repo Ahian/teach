@@ -13,19 +13,47 @@ d1={
     "key2": a2,
     "key3": a3,
 }
+def loop():
+    # 循环
+    var1 = 1
+    while var1 < 888:
+        var1 = var1 * 2
+        print(var1)
+    va2 = 1
+    sum = 0
+    while va2 <= 100:
+        sum = sum + va2
+        va2 = va2 + 1
+        print(sum)
+
+def loop_n(n):
+    va2 = 1
+    sum = 1
+    while va2 <= n:
+        sum = sum *va2
+        va2 = va2 + 1
+    return sum
+
+def loop_n_2(n):
+    va2 = 1
+    sum = 0
+    while va2 <= n:
+        sum = sum + va2
+        va2 = va2 + 2
+    print(sum)
 
 
-def main():
+def logic():
     # 逻辑判断
     dic_compare = {
-        "等于": "==",
-        "不等于":"!=",
-        "大于等于":">=",
+    "等于": "==",
+    "不等于":"!=",
+    "大于等于":">=",
     }
     dic_logic = {
-        "或": 'or',
-        "并且": "and",
-        "非":"not",
+    "或": 'or',
+    "并且": "and",
+    "非":"not",
     }
     weather = 'sunny'
 
@@ -34,18 +62,33 @@ def main():
     else:
         print('no running')
 
-    if 1:
-        print('你是傻逼')
+        if 1:
+            print('你是傻逼')
+
+            price=8
+            if price <5:
+                print('买俩瓶')
+            elif price>5 and price>=8 :
+                print('买一瓶')
+            else:
+                print('不买')
 
 
-
-    price=8
-    if price <5:
-        print('买俩瓶')
-    elif price>5 and price>=8 :
-        print('买一瓶')
+def ensure(arg1, arg2, massage):
+    if arg1!=arg2:
+        print(massage)
     else:
-        print('不买')
+        print("没出错")
+
+def main():
+    ensure(loop_n(3), 6, "3出错")
+    ensure(loop_n(4), 24, "4出错")
+    ensure(loop_n(5),100, "5出错")
+
+    l4 = loop_n(4)
+    print(l4)
+    # 遍历一个数据结构
+
 # 程序的入口
 if __name__ == '__main__':
     main()
