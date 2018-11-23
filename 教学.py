@@ -9,11 +9,13 @@ def argss(arg):
     # 数组 有顺序的一组变量
     array = [a1, a2, a3]
     # dict字典 和数组的核心区别是键值对
-    d1={
-    "key1": a1,
-    "key2": a2,
-    "key3": a3,
+    d1 = {
+        "key1": a1,
+        "key2": a2,
+        "key3": a3,
     }
+
+
 def loop():
     # 循环
     var1 = 1
@@ -27,13 +29,15 @@ def loop():
         va2 = va2 + 1
         print(sum)
 
+
 def loop_n(n):
     va2 = 1
     sum = 1
     while va2 <= n:
-        sum = sum *va2
+        sum = sum * va2
         va2 = va2 + 1
     return sum
+
 
 def loop_n_2(n):
     va2 = 1
@@ -47,14 +51,14 @@ def loop_n_2(n):
 def logic():
     # 逻辑判断
     dic_compare = {
-    "等于": "==",
-    "不等于":"!=",
-    "大于等于":">=",
+        "等于": "==",
+        "不等于": "!=",
+        "大于等于": ">=",
     }
     dic_logic = {
-    "或": 'or',
-    "并且": "and",
-    "非":"not",
+        "或": 'or',
+        "并且": "and",
+        "非": "not",
     }
     weather = 'sunny'
 
@@ -65,21 +69,21 @@ def logic():
 
         if 1:
             print('你是傻逼')
-
-            price=8
-            if price <5:
-                print('买俩瓶')
-            elif price>5 and price>=8 :
-                print('买一瓶')
-            else:
-                print('不买')
+    price = 8
+    if price < 5:
+        print('买俩瓶')
+    elif price > 5 and price >= 8:
+        print('买一瓶')
+    else:
+        print('不买')
 
 
 def ensure(arg1, arg2, massage):
-    if arg1!=arg2:
+    if arg1 != arg2:
         print(massage)
     else:
         print("没出错")
+
 
 def big_ensure():
     ensure(loop_n(3), 6, "3出错")
@@ -92,6 +96,7 @@ def main():
     l4 = loop_n(4)
     print(l4)
     # 遍历一个数据结构
+
 
 # 程序的入口
 if __name__ == '__main__':
